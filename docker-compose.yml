@@ -1,8 +1,8 @@
-version: "3.8"
-
 services:
   portfolio:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: portfolio
     ports:
       - "80:80"
