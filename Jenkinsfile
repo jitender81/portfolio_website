@@ -42,4 +42,14 @@ pipeline{
         }
         
     }
+    post {
+        failure {
+            mail to: 'jitendermahlawat696@gmail.com',
+                subject: "❌ Build Failed: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                 body: "Check console output: ${env.BUILD_URL}"
+        }
+        success {
+            echo "✅ Pipeline completed successfully!"
+        }
+    }
 }
