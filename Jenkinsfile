@@ -20,6 +20,7 @@ pipeline{
                        -Dsonar.sources=. \
                        -Dsonar.nodejs.executable=/usr/bin/node \
                        -Dsonar.javascript.node.maxspace=256
+                       -Dsonar.exclusions=**/*.jpg,**/*.png,**/*.jpeg,**/*.gif,**/*.ico
                        """
                    }
                }
