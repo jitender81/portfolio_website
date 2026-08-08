@@ -19,8 +19,8 @@ pipeline{
                        -Dsonar.projectKey=jitender81_portfolio_website \
                        -Dsonar.sources=. \
                        -Dsonar.nodejs.executable=/usr/bin/node \
-                       -Dsonar.javascript.node.maxspace=256
-                       -Dsonar.exclusions=**/*.jpg,**/*.png,**/*.jpeg,**/*.gif,**/*.ico
+                       -Dsonar.javascript.node.maxspace=256\
+                       -Dsonar.exclusions=**/*.jpg,**/*.png,**/*.jpeg,**/*.gif,**/*.ico\
                        -Dsonar.scanner.skipSystemTruststore=true \
                        -Dsonar.text.analyzeHostedRepoOnly=false \
                        -Dsonar.scm.disabled=true
