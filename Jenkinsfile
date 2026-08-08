@@ -8,20 +8,23 @@ pipeline{
                 echo "code cloning succesful"
             }
         }
-        stage('SonarCloud Analysis') {
-          steps {
-             withSonarQubeEnv('SonarCloud') {
-                withEnv(['SONAR_SCANNER_HOME=' + tool 'SonarScanner']) {
-                   sh '''
-                      $SONAR_SCANNER_HOME/bin/sonar-scanner \
-                      -Dsonar.organization=jitender81 \
-                      -Dsonar.projectKey=jitender81_portfolio_website \
-                      -Dsonar.sources=.
-                       '''
+        stage("SonarCloud Analysis") {
+           steps {
+              withSonarQubeEnv("SonarCloud") {
+                 script {
+                    def scannerHome = tool "SonarScanner"
+
+                       sh """
+                         ${scannerHome}/bin/sonar-scanner \
+                         -Dsonar.organization=jitender81 \
+                         -Dsonar.projectKey=jitender81_portfolio_website \
+                         -Dsonar.sources=.
+                         """
                    }
                }
            }
         }
+
         stage("build docker image"){
             steps{
                 echo "this is building the code"
