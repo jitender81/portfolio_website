@@ -21,6 +21,9 @@ pipeline{
                        -Dsonar.nodejs.executable=/usr/bin/node \
                        -Dsonar.javascript.node.maxspace=256
                        -Dsonar.exclusions=**/*.jpg,**/*.png,**/*.jpeg,**/*.gif,**/*.ico
+                       -Dsonar.scanner.skipSystemTruststore=true \
+                       -Dsonar.text.analyzeHostedRepoOnly=false \
+                       -Dsonar.scm.disabled=true
                        """
                    }
                }
