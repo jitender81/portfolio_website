@@ -19,7 +19,7 @@ pipeline{
                        -Dsonar.projectKey=jitender81_portfolio_website \
                        -Dsonar.sources=. \
                        -Dsonar.nodejs.executable=/usr/bin/node \
-                       -Dsonar.log.level=DEBUG
+                       -Dsonar.javascript.node.maxspace=256
                        """
                    }
                }
