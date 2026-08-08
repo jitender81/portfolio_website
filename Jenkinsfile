@@ -13,13 +13,14 @@ pipeline{
               withSonarQubeEnv("SonarCloud") {
                  script {
                     def scannerHome = tool "SonarScanner"
-                     sh """
-                      ${scannerHome}/bin/sonar-scanner \
-                      -Dsonar.organization=jitender81 \
-                      -Dsonar.projectKey=jitender81_portfolio_website \
-                      -Dsonar.sources=. \
-                      -Dsonar.nodejs.executable=/usr/bin/node
-                      """
+                      sh """
+                        ${scannerHome}/bin/sonar-scanner \
+                       -Dsonar.organization=jitender81 \
+                       -Dsonar.projectKey=jitender81_portfolio_website \
+                       -Dsonar.sources=. \
+                       -Dsonar.nodejs.executable=/usr/bin/node \
+                       -Dsonar.log.level=DEBUG
+                       """
                    }
                }
            }
