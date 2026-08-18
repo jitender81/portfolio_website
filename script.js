@@ -258,14 +258,15 @@ const projectData = {
     liveUrl: "#",
     githubUrl: "#"
   },
+  
   project3: {
-    title: "Next-Gen Fintech & Crypto Wallet UI",
-    category: "Mobile / Responsive Web UI",
-    image: "assets/project3.jpg",
-    description: "An intuitive web and mobile interface for asset management, transaction history tracking, real-time price updates, and secure API integration.",
-    tags: ["CSS3 Flexbox/Grid", "JavaScript", "Async Fetch", "Custom Animations"],
-    liveUrl: "#",
-    githubUrl: "#"
+  title: "Portfolio Website",
+  category: "DevOps & Full-Stack",
+  image: "images/portfolio-home.png",
+  description: "My personal portfolio website, deployed end-to-end using DevOps practices: containerized with Docker, hosted on AWS EC2, served through an Nginx reverse proxy with free SSL (Certbot), and auto-deployed on every push via a Jenkins CI/CD pipeline with a remote build agent.",
+  tags: ["Docker", "AWS EC2", "Jenkins CI/CD", "Nginx", "Certbot / SSL"],
+  liveUrl: "https://jitender.ddns.net",
+  githubUrl: "https://github.com/jitender81/portfolio_website"
   }
 };
 
