@@ -57,7 +57,7 @@ pipeline{
         stage("deploy"){
             steps{
                 echo "this is deploying the code"
-                sh 'docker compose up -d'
+                sh 'docker compose up -d --build --force-recreate'
             }
         }
         
