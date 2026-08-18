@@ -5,5 +5,5 @@ services:
       dockerfile: Dockerfile
     container_name: portfolio
     ports:
-      - "80:80"
+      - "8080:80"
     restart: unless-stopped
