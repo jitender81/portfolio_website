@@ -8,7 +8,27 @@ pipeline{
                 echo "code cloning succesful"
             }
         }
-        
+//        stage("SonarCloud Analysis") {
+ //          steps {
+  //            withSonarQubeEnv("SonarCloud") {
+//                 script {
+//                    def scannerHome = tool "SonarScanner"
+  //                    sh """
+   //                     ${scannerHome}/bin/sonar-scanner \
+     //                  -Dsonar.organization=jitender81 \
+    //                   -Dsonar.projectKey=jitender81_portfolio_website \
+    //                   -Dsonar.sources=. \
+     //                  -Dsonar.nodejs.executable=/usr/bin/node \
+      //                 -Dsonar.javascript.node.maxspace=256\
+      //                 -Dsonar.exclusions=**/*.jpg,**/*.png,**/*.jpeg,**/*.gif,**/*.ico\
+       //                -Dsonar.scanner.skipSystemTruststore=true \
+        //               -Dsonar.text.analyzeHostedRepoOnly=false \
+        //               -Dsonar.scm.disabled=true
+        //               """
+          //         }
+         //      }
+       //    }
+     //   }
         stage("build docker image"){
             steps{
                 echo "this is building the code"
