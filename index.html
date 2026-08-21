@@ -1,568 +1,680 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark" data-accent="cyan">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jitender | DevOps Engineer & Full-Stack Developer</title>
-  <meta name="description" content="Personal portfolio of Jitender, a DevOps Engineer and Full-Stack Developer specializing in CI/CD automation, cloud infrastructure, and resilient web applications.">
-  <meta name="keywords" content="Jitender, DevOps Engineer, Full-Stack Developer, Automatic Email Sender, Automation, CI/CD, HTML, CSS, JavaScript">
-  <meta name="author" content="Jitender">
-
-  <!-- OpenGraph / Social Media Meta Tags -->
-  <meta property="og:title" content="Jitender | DevOps Engineer & Full-Stack Developer">
-  <meta property="og:description" content="Explore my portfolio featuring automated email sender tools, DevOps automation pipelines, and full-stack web applications.">
-  <meta property="og:image" content="assets/avatar.jpg">
-  <meta property="og:type" content="website">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jitender Mahlawat | DevOps & Cloud Engineer</title>
+  <meta name="description" content="Portfolio of Jitender Mahlawat - DevOps & Cloud Engineer specializing in CI/CD, AWS, Docker, Kubernetes, Jenkins, Prometheus, and Grafana." />
+  
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- FontAwesome Icons CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="bg-[#080b12] text-slate-100 font-sans antialiased selection:bg-cyan-500/30 selection:text-cyan-200">
 
-  <!-- Ambient Light Background Glows -->
-  <div class="bg-ambient" aria-hidden="true">
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-  </div>
+  <!-- Ambient Glow Elements -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
 
-  <!-- Navigation Bar -->
-  <nav class="navbar" id="navbar">
-    <div class="container nav-container">
-      <a href="#hero" class="nav-logo" id="navLogo">
-        Jitender<span class="text-gradient"></span><span class="logo-dot"></span>
+  <!-- NAVIGATION BAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <div class="logo-box">
+          <div class="logo-inner">J</div>
+        </div>
+        <div>
+          <div class="brand-name-wrap">
+            <span class="brand-name">Jitender Mahlawat</span>
+            <span class="status-badge"><span class="pulse-dot"></span> Available</span>
+          </div>
+          <p class="brand-role">DevOps & Cloud Engineer</p>
+        </div>
       </a>
 
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="#hero" class="nav-link active" id="linkHero">Home</a></li>
-        <li><a href="#about" class="nav-link" id="linkAbout">About</a></li>
-        <li><a href="#skills" class="nav-link" id="linkSkills">Skills</a></li>
-        <li><a href="#projects" class="nav-link" id="linkProjects">Projects</a></li>
-        <li><a href="#experience" class="nav-link" id="linkExperience">Experience</a></li>
-        <li><a href="#contact" class="nav-link" id="linkContact">Contact</a></li>
-      </ul>
+      <!-- Desktop Navigation -->
+      <nav class="nav-links">
+        <a href="#spotlight" class="nav-item">Architecture</a>
+        <a href="#projects" class="nav-item">Projects</a>
+        <a href="#tech-stack" class="nav-item">Tech Stack</a>
+        <a href="#experience" class="nav-item">Experience</a>
+        <a href="#terminal" class="nav-item">Terminal</a>
+        <a href="#contact" class="nav-item">Contact</a>
+      </nav>
 
-      <div class="nav-controls">
-        <!-- Theme Accent Picker -->
-        <div class="accent-dropdown" id="accentDropdown" title="Customize Accent Color">
-          <button class="control-btn" id="accentBtn" aria-label="Choose Accent Theme">
-            <i class="fas fa-palette"></i>
-          </button>
-          <div class="accent-menu" id="accentMenu">
-            <div class="accent-dot cyan" data-accent="cyan" title="Neon Cyan"></div>
-            <div class="accent-dot violet" data-accent="violet" title="Violet Glow"></div>
-            <div class="accent-dot emerald" data-accent="emerald" title="Emerald Pulse"></div>
-            <div class="accent-dot amber" data-accent="amber" title="Sunset Amber"></div>
+      <!-- Quick Action Buttons -->
+      <div class="nav-actions">
+        <a href="https://github.com/jitender81" target="_blank" rel="noreferrer" class="icon-btn" title="GitHub"><i data-lucide="github"></i></a>
+        <a href="https://www.linkedin.com/in/jitender-mahlawat-64303b259/" target="_blank" rel="noreferrer" class="icon-btn" title="LinkedIn"><i data-lucide="linkedin"></i></a>
+        <a href="https://jitender.ddns.net" target="_blank" rel="noreferrer" class="icon-btn" title="Personal Domain"><i data-lucide="globe"></i></a>
+        <a href="#contact" class="btn-primary-sm"><i data-lucide="mail"></i> Contact</a>
+      </div>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+        <i data-lucide="menu" id="toggle-icon"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#spotlight" class="mobile-nav-item">Architecture</a>
+      <a href="#projects" class="mobile-nav-item">Projects</a>
+      <a href="#tech-stack" class="mobile-nav-item">Tech Stack</a>
+      <a href="#experience" class="mobile-nav-item">Experience</a>
+      <a href="#terminal" class="mobile-nav-item">Terminal</a>
+      <a href="#contact" class="mobile-nav-item">Contact</a>
+      <div class="mobile-cta-group">
+        <a href="https://www.linkedin.com/in/jitender-mahlawat-64303b259/" target="_blank" class="btn-secondary-full"><i data-lucide="linkedin"></i> LinkedIn Profile</a>
+        <a href="#contact" class="btn-primary-full">Get In Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="hero-container">
+        <!-- Profile Avatar Card -->
+        <div class="hero-avatar-wrap">
+          <div class="avatar-glow-ring">
+            <div class="avatar-img-frame">
+              <img src="assets/1img.png" alt="Jitender Mahlawat" class="hero-avatar-img" referrerpolicy="no-referrer" />
+              <span class="avatar-status-badge" title="Available for Roles">
+                <span class="avatar-pulse-dot"></span>
+              </span>
+            </div>
+          </div>
+          <div class="avatar-name-badge">
+            <span class="avatar-name">Jitender Mahlawat</span>
+            <span class="avatar-domain">jitender.ddns.net</span>
           </div>
         </div>
 
-        <!-- Dark/Light Mode Toggle -->
-        <button class="control-btn" id="themeToggle" aria-label="Toggle Dark/Light Mode" title="Toggle Mode">
-          <i class="fas fa-sun"></i>
-        </button>
-
-        <!-- Mobile Menu Toggle Button -->
-        <button class="control-btn mobile-toggle" id="mobileToggle" aria-label="Toggle Mobile Menu">
-          <i class="fas fa-bars"></i>
-        </button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero" id="hero">
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <div class="hero-status" id="heroStatus">
-          <span class="status-dot"></span> Open for DevOps & Full-Stack Opportunities
+        <!-- Status Pill -->
+        <div class="hero-pill">
+          <span class="pulse-dot"></span>
+          <span class="pill-label">Engineering Focus:</span>
+          <span class="pill-highlight">DevOps & Cloud Engineering</span>
         </div>
 
+        <!-- Main Headline -->
         <h1 class="hero-title">
-          Hi, I'm <span class="text-gradient">Jitender</span><br>
-          Building Scalable Systems
+          Automating Cloud Delivery & <span class="gradient-text">Scalable DevOps Workflows</span>
         </h1>
 
-        <div class="typing-container">
-          <span>Specialized as a&nbsp;</span><span class="typing-text" id="typingText"></span>
+        <!-- Dynamic Role Rotator -->
+        <div class="role-rotator-wrap">
+          <span class="role-prefix">Specializing in:</span>
+          <div class="role-pill" id="role-rotator">DevOps & CI/CD Pipelines</div>
         </div>
 
+        <!-- Bio Paragraph -->
         <p class="hero-bio">
-          Passionate DevOps Engineer and Full-Stack Developer dedicated to building resilient CI/CD automation, cloud infrastructure, containerization, and modern high-performance web applications.
+          DevOps & Cloud Engineer specializing in automated <strong>CI/CD deployment pipelines</strong>, containerized cloud services, <strong>Linux server administration</strong>, and real-time <strong>system observability</strong> with Prometheus & Grafana.
         </p>
 
+        <!-- Call To Actions -->
         <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary" id="btnExploreWork">
-            Explore Work <i class="fas fa-arrow-right"></i>
-          </a>
-          <a href="#contact" class="btn btn-secondary" id="btnGetInTouch">
-            Get In Touch
-          </a>
+          <a href="#spotlight" class="btn-primary"><i data-lucide="zap"></i> View Architecture Spotlight</a>
+          <a href="#projects" class="btn-secondary"><i data-lucide="layers"></i> All Projects & Systems</a>
+          <a href="#terminal" class="btn-outline-mono"><i data-lucide="terminal"></i> Launch CLI</a>
         </div>
 
-        <div class="social-bar">
-          <a href="https://github.com/Jitender81" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile" id="socialGithub">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile" id="socialLinkedin">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://twitter.com/jitumahlawat81" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="X (Twitter) Profile" id="socialTwitter">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-            </svg>
-          </a></i>
-          </a>
-          <a href="https://hub.docker.com/u/jitender" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Docker Hub Profile" id="socialDocker">
-            <i class="fab fa-docker"></i>
-          </a>
+        <!-- Proof Bar Highlights -->
+        <div class="proof-bar">
+          <div class="proof-card">
+            <div class="proof-icon-box text-cyan"><i data-lucide="zap"></i></div>
+            <div>
+              <div class="proof-title">Automated CI/CD</div>
+              <div class="proof-desc">Jenkins & Webhooks</div>
+            </div>
+          </div>
+
+          <div class="proof-card">
+            <div class="proof-icon-box text-emerald"><i data-lucide="activity"></i></div>
+            <div>
+              <div class="proof-title">Observability</div>
+              <div class="proof-desc">Prometheus & Grafana</div>
+            </div>
+          </div>
+
+          <div class="proof-card">
+            <div class="proof-icon-box text-indigo"><i data-lucide="server"></i></div>
+            <div>
+              <div class="proof-title">Cloud Deployment</div>
+              <div class="proof-desc">AWS EC2 & Docker</div>
+            </div>
+          </div>
+
+          <div class="proof-card">
+            <div class="proof-icon-box text-amber"><i data-lucide="shield-check"></i></div>
+            <div>
+              <div class="proof-title">Quality & Security</div>
+              <div class="proof-desc">SonarQube & Nginx SSL</div>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="hero-avatar-wrapper">
-        <div class="avatar-frame">
-          <img src="assets/avatar.jpg" alt="Jitender - DevOps Engineer & Full Stack Developer" class="avatar-img" id="avatarImg">
+    <!-- ARCHITECTURE SPOTLIGHT (PULSEHEALTH) -->
+    <section class="section-wrap" id="spotlight">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-tag"><i data-lucide="sparkles"></i> Featured Production Architecture</div>
+            <h2 class="section-title">Hospital Dashboard (PulseHealth)</h2>
+            <p class="section-subtitle">
+              End-to-end full-stack Hospital Dashboard transformed into a production-style DevOps & Cloud engineering architecture.
+            </p>
+          </div>
+          <div class="section-header-action">
+            <a href="https://pulsehealth.servegame.com" target="_blank" rel="noreferrer" class="btn-primary">
+              <span>Visit Live App</span> <i data-lucide="external-link"></i>
+            </a>
+          </div>
         </div>
-        
-        <!-- Floating Tech Badges -->
-        <div class="float-badge badge-1">
-          <i class="fas fa-server text-gradient"></i> DevOps & Automation
-        </div>
-        <div class="float-badge badge-2">
-          <i class="fas fa-code text-gradient"></i> Full-Stack Web
+
+        <!-- Spotlight Showcase Box -->
+        <div class="spotlight-card">
+          <!-- Spotlight Topbar & Tabs -->
+          <div class="spotlight-topbar">
+            <div class="window-controls">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="url-text">https://pulsehealth.servegame.com</span>
+            </div>
+            <div class="tab-group">
+              <button class="tab-btn active" data-tab="tab-pipeline"><i data-lucide="zap"></i> Jenkins CI/CD</button>
+              <button class="tab-btn" data-tab="tab-arch"><i data-lucide="boxes"></i> Cloud, AWS & K8s</button>
+              <button class="tab-btn" data-tab="tab-mon"><i data-lucide="activity"></i> Prometheus & Grafana</button>
+            </div>
+          </div>
+
+          <!-- Spotlight Content Grid -->
+          <div class="spotlight-body">
+            <!-- Left Info Pane -->
+            <div class="spotlight-left">
+              <!-- Tab 1 -->
+              <div class="tab-content active" id="tab-pipeline">
+                <div class="tab-badge text-cyan"><i data-lucide="zap"></i> AUTOMATED CI/CD WORKFLOW</div>
+                <h3 class="tab-heading">Jenkins CI/CD with Webhooks & SonarQube Quality Gates</h3>
+                <p class="tab-desc">
+                  Every commit pushed to GitHub automatically triggers a Jenkins pipeline through configured webhooks. The workflow runs automated tests, passes code through SonarQube quality analysis, builds optimized Docker container images, pushes them to DockerHub, and triggers zero-downtime deployment.
+                </p>
+                <ul class="bullet-list">
+                  <li><i data-lucide="check-circle-2" class="text-cyan"></i> GitHub Webhook triggers Jenkins automated pipeline on every push</li>
+                  <li><i data-lucide="check-circle-2" class="text-cyan"></i> SonarQube code quality and vulnerability analysis quality gates</li>
+                  <li><i data-lucide="check-circle-2" class="text-cyan"></i> Multi-stage Docker container builds pushed directly to DockerHub registry</li>
+                  <li><i data-lucide="check-circle-2" class="text-cyan"></i> Automated deployment execution with health verification</li>
+                </ul>
+              </div>
+
+              <!-- Tab 2 -->
+              <div class="tab-content" id="tab-arch">
+                <div class="tab-badge text-emerald"><i data-lucide="boxes"></i> CLOUD & INFRASTRUCTURE</div>
+                <h3 class="tab-heading">AWS EC2, Kubernetes, Terraform & Nginx Reverse Proxy</h3>
+                <p class="tab-desc">
+                  The stack is deployed on an AWS EC2 compute instance with Kubernetes container orchestration and declarative Terraform IaC. Traffic is routed via Nginx reverse proxy with SSL/TLS secured via Let’s Encrypt + Certbot, backed by cloud-managed MongoDB Atlas.
+                </p>
+                <ul class="bullet-list">
+                  <li><i data-lucide="check-circle-2" class="text-emerald"></i> Full-Stack Architecture: React/Vite UI with high-speed FastAPI Python backend</li>
+                  <li><i data-lucide="check-circle-2" class="text-emerald"></i> MongoDB Atlas for managed cloud database persistence</li>
+                  <li><i data-lucide="check-circle-2" class="text-emerald"></i> Terraform Infrastructure as Code for reproducible provisioning</li>
+                  <li><i data-lucide="check-circle-2" class="text-emerald"></i> Nginx reverse proxy with custom subdomain & automated Let’s Encrypt HTTPS/SSL</li>
+                </ul>
+              </div>
+
+              <!-- Tab 3 -->
+              <div class="tab-content" id="tab-mon">
+                <div class="tab-badge text-indigo"><i data-lucide="activity"></i> OBSERVABILITY & MONITORING</div>
+                <h3 class="tab-heading">Prometheus, Node Exporter & Grafana Dashboards</h3>
+                <p class="tab-desc">
+                  End-to-end telemetry scraping collects infrastructure resource stats via Node Exporter and application response times via Prometheus, rendered in real-time on customized Grafana dashboards.
+                </p>
+                <ul class="bullet-list">
+                  <li><i data-lucide="check-circle-2" class="text-indigo"></i> Node Exporter capturing host CPU, memory, disk I/O & network metrics</li>
+                  <li><i data-lucide="check-circle-2" class="text-indigo"></i> Prometheus time-series scraper collecting container & application telemetry</li>
+                  <li><i data-lucide="check-circle-2" class="text-indigo"></i> Grafana visualization dashboards for live cluster & health metrics</li>
+                  <li><i data-lucide="check-circle-2" class="text-indigo"></i> Proactive alerting thresholds for error rates and resource saturation</li>
+                </ul>
+              </div>
+
+              <!-- Tech Badges -->
+              <div class="badge-grid">
+                <span class="badge">Jenkins CI/CD</span>
+                <span class="badge">GitHub Webhooks</span>
+                <span class="badge">SonarQube</span>
+                <span class="badge">Docker & DockerHub</span>
+                <span class="badge">AWS EC2</span>
+                <span class="badge">Kubernetes</span>
+                <span class="badge">Terraform</span>
+                <span class="badge">Prometheus</span>
+                <span class="badge">Grafana</span>
+                <span class="badge">FastAPI</span>
+                <span class="badge">React / Vite</span>
+                <span class="badge">MongoDB Atlas</span>
+                <span class="badge">Nginx + SSL</span>
+              </div>
+            </div>
+
+            <!-- Right Terminal / Topology Visualizer -->
+            <div class="spotlight-right">
+              <div class="terminal-panel">
+                <div class="term-head">
+                  <div class="term-title"><i data-lucide="terminal"></i> pipeline_architecture.spec</div>
+                  <div class="term-status"><span class="pulse-dot"></span> LIVE ON AWS EC2</div>
+                </div>
+
+                <div class="term-flow">
+                  <div class="flow-label">1. CI/CD Automation Flow:</div>
+                  <div class="flow-box">
+                    <span class="text-cyan">GitHub</span> → <span class="text-emerald">Webhook</span> → <span class="text-amber">Jenkins</span> → <span class="text-indigo">SonarQube</span> → <span class="text-cyan">Docker Build</span> → <span class="text-emerald">DockerHub</span> → <span class="text-amber">AWS EC2</span>
+                  </div>
+
+                  <div class="flow-label">2. Cloud & Monitoring Topology:</div>
+                  <div class="topo-box topo-nginx">
+                    <div class="topo-left">
+                      <i data-lucide="lock" class="text-emerald"></i>
+                      <div>
+                        <div class="font-bold text-white">AWS EC2 + Nginx Reverse Proxy</div>
+                        <div class="topo-sub">pulsehealth.servegame.com • Let's Encrypt SSL</div>
+                      </div>
+                    </div>
+                    <span class="port-tag">HTTPS 443</span>
+                  </div>
+
+                  <div class="topo-grid-2">
+                    <div class="topo-box">
+                      <div class="font-bold text-indigo">React + FastAPI</div>
+                      <div class="topo-sub">Docker / Kubernetes</div>
+                    </div>
+                    <div class="topo-box">
+                      <div class="font-bold text-amber"><i data-lucide="database"></i> MongoDB Atlas</div>
+                      <div class="topo-sub">Managed Cloud DB</div>
+                    </div>
+                  </div>
+
+                  <div class="topo-box topo-metrics">
+                    <div class="font-bold text-amber"><i data-lucide="activity"></i> Prometheus + Node Exporter → Grafana</div>
+                    <span class="text-emerald text-xs">Scraping Active</span>
+                  </div>
+                </div>
+
+                <div class="term-foot">
+                  <span>Live URL:</span>
+                  <a href="https://pulsehealth.servegame.com" target="_blank" rel="noreferrer" class="link-cyan">
+                    https://pulsehealth.servegame.com <i data-lucide="external-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About & Stats Section -->
-  <section class="about" id="about">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag"><i class="fas fa-user-circle"></i> Discover</span>
-        <h2 class="section-title">About Me</h2>
-        <p class="section-subtitle">Bridging the gap between software development, automation, and reliable cloud operations.</p>
+    <!-- PROJECTS SECTION -->
+    <section class="section-wrap bg-darker" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-tag"><i data-lucide="folder-git-2"></i> Systems & Applications</div>
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">
+              Production deployments, automated cloud delivery architectures, and DevOps tooling.
+            </p>
+          </div>
+          <!-- Category Filter Bar -->
+          <div class="filter-group">
+            <button class="filter-btn active" data-filter="all">All Systems</button>
+            <button class="filter-btn" data-filter="devops">DevOps & Cloud</button>
+            <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Card 1: PulseHealth -->
+          <div class="project-card" data-category="devops fullstack">
+            <div class="card-top">
+              <div class="card-badge bg-cyan-dim"><i data-lucide="activity"></i> Production Deployment</div>
+              <a href="https://pulsehealth.servegame.com" target="_blank" class="card-ext-link"><i data-lucide="arrow-up-right"></i></a>
+            </div>
+            <h3 class="card-title">Hospital Dashboard (PulseHealth)</h3>
+            <p class="card-desc">
+              Comprehensive hospital management system engineered into a cloud-native production deployment featuring Jenkins CI/CD, SonarQube quality gates, Docker containerization on AWS EC2, and Prometheus/Grafana real-time observability.
+            </p>
+            <div class="card-tags">
+              <span>Jenkins</span><span>AWS EC2</span><span>Docker</span><span>Kubernetes</span><span>Prometheus</span><span>Grafana</span><span>FastAPI</span><span>React</span><span>MongoDB</span>
+            </div>
+            <div class="card-links">
+              <a href="https://pulsehealth.servegame.com" target="_blank" class="btn-card-primary"><i data-lucide="globe"></i> Live App</a>
+              <a href="https://github.com/jitender81" target="_blank" class="btn-card-secondary"><i data-lucide="github"></i> Code</a>
+            </div>
+          </div>
+
+          <!-- Card 2: DevOps Portfolio Website -->
+          <div class="project-card" data-category="devops">
+            <div class="card-top">
+              <div class="card-badge bg-emerald-dim"><i data-lucide="server"></i> Infrastructure & Host</div>
+              <a href="https://jitender.ddns.net" target="_blank" class="card-ext-link"><i data-lucide="arrow-up-right"></i></a>
+            </div>
+            <h3 class="card-title">DevOps Portfolio Website</h3>
+            <p class="card-desc">
+              Containerized portfolio engineered with a streamlined Jenkins automated CI/CD pipeline, webhook triggers, Docker multi-stage builds, and deployed to AWS EC2 behind an Nginx reverse proxy with SSL termination.
+            </p>
+            <div class="card-tags">
+              <span>Jenkins</span><span>Docker</span><span>Nginx</span><span>AWS EC2</span><span>Let's Encrypt SSL</span><span>TypeScript</span><span>Tailwind</span>
+            </div>
+            <div class="card-links">
+              <a href="https://jitender.ddns.net" target="_blank" class="btn-card-primary"><i data-lucide="globe"></i> Live Domain</a>
+              <a href="https://github.com/jitender81" target="_blank" class="btn-card-secondary"><i data-lucide="github"></i> Code</a>
+            </div>
+          </div>
+
+          <!-- Card 3: Automated Email Dispatcher -->
+          <div class="project-card" data-category="devops">
+            <div class="card-top">
+              <div class="card-badge bg-amber-dim"><i data-lucide="mail"></i> Automation Tooling</div>
+              <a href="https://github.com/jitender81" target="_blank" class="card-ext-link"><i data-lucide="arrow-up-right"></i></a>
+            </div>
+            <h3 class="card-title">Automated Email Dispatcher Engine</h3>
+            <p class="card-desc">
+              Lightweight automation engine engineered for batch email processing and operational alerts. Features automated SMTP integration, schedule triggers, and comprehensive execution logging.
+            </p>
+            <div class="card-tags">
+              <span>Python</span><span>Bash</span><span>Cron</span><span>SMTP</span><span>Linux</span><span>Automation</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/jitender81" target="_blank" class="btn-card-primary"><i data-lucide="github"></i> Repository</a>
+              <a href="#contact" class="btn-card-secondary"><i data-lucide="message-square"></i> Inquire</a>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <!-- Quick Metrics Grid -->
-      <div class="stats-grid">
-        <div class="glass-card stat-card">
-          <div class="stat-number text-gradient" id="statExp">1+</div>
-          <div class="stat-label">Years Experience</div>
+    <!-- TECH STACK & TOOLS -->
+    <section class="section-wrap" id="tech-stack">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-tag"><i data-lucide="cpu"></i> Skills & Capabilities</div>
+            <h2 class="section-title">Technical Tooling & Stack</h2>
+            <p class="section-subtitle">
+              Technologies and platforms leveraged across infrastructure, continuous delivery, and full-stack development.
+            </p>
+          </div>
         </div>
-        <div class="glass-card stat-card">
-          <div class="stat-number text-gradient" id="statProjects">3+</div>
-          <div class="stat-label">Automation & Web Projects</div>
-        </div>
-        <div class="glass-card stat-card">
-          <div class="stat-number text-gradient" id="statClients">99.9%</div>
-          <div class="stat-label">Uptime & Reliability</div>
-        </div>
-        <div class="glass-card stat-card">
-          <div class="stat-number text-gradient" id="statCommits">50+</div>
-          <div class="stat-label">Code Commits</div>
+
+        <div class="stack-grid">
+          <!-- Category 1 -->
+          <div class="stack-card">
+            <div class="stack-icon text-cyan"><i data-lucide="zap"></i></div>
+            <h3 class="stack-category">CI/CD & Automation</h3>
+            <div class="skill-chips">
+              <span class="chip">Jenkins</span>
+              <span class="chip">GitHub Actions & Webhooks</span>
+              <span class="chip">SonarQube</span>
+              <span class="chip">DockerHub CI</span>
+              <span class="chip">Bash Scripting</span>
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="stack-card">
+            <div class="stack-icon text-emerald"><i data-lucide="boxes"></i></div>
+            <h3 class="stack-category">Cloud & Infrastructure</h3>
+            <div class="skill-chips">
+              <span class="chip">AWS (EC2, VPC, S3)</span>
+              <span class="chip">Docker & Docker Compose</span>
+              <span class="chip">Kubernetes</span>
+              <span class="chip">Terraform (IaC)</span>
+              <span class="chip">Linux / Ubuntu Server</span>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="stack-card">
+            <div class="stack-icon text-indigo"><i data-lucide="activity"></i></div>
+            <h3 class="stack-category">Observability & Networking</h3>
+            <div class="skill-chips">
+              <span class="chip">Prometheus</span>
+              <span class="chip">Node Exporter</span>
+              <span class="chip">Grafana Dashboards</span>
+              <span class="chip">Nginx Reverse Proxy</span>
+              <span class="chip">Certbot & SSL/TLS</span>
+            </div>
+          </div>
+
+          <!-- Category 4 -->
+          <div class="stack-card">
+            <div class="stack-icon text-amber"><i data-lucide="code-2"></i></div>
+            <h3 class="stack-category">Development & Databases</h3>
+            <div class="skill-chips">
+              <span class="chip">Python / FastAPI</span>
+              <span class="chip">React / TypeScript</span>
+              <span class="chip">Node.js / Express</span>
+              <span class="chip">MongoDB Atlas</span>
+              <span class="chip">Git / GitHub</span>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Tabbed About Details -->
-      <div class="glass-card about-box">
-        <div class="about-tabs">
-          <button class="tab-btn active" data-tab="tabBio" id="tabBtnBio">Biography</button>
-          <button class="tab-btn" data-tab="tabPhilosophy" id="tabBtnPhilosophy">DevOps Philosophy</button>
-          <button class="tab-btn" data-tab="tabEducation" id="tabBtnEducation">Background & Stack</button>
+    <!-- EXPERIENCE & EDUCATION -->
+    <section class="section-wrap bg-darker" id="experience">
+      <div class="container max-w-4xl">
+        <div class="section-header text-center">
+          <div class="section-tag mx-auto"><i data-lucide="graduation-cap"></i> Academic & Professional Path</div>
+          <h2 class="section-title">Experience & Education</h2>
         </div>
 
-        <div class="tab-content active" id="tabBio">
-          <p style="margin-bottom: 1rem; color: var(--text-secondary);">
-            My name is <strong>Jitender</strong>. As a DevOps Engineer and Full-Stack Developer, I specialize in automating workflows, building robust web applications, and establishing high-availability deployment pipelines.
+        <div class="timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2023 - Present</div>
+              <h3 class="timeline-role">DevOps & Cloud Engineer (Projects & Self-Directed)</h3>
+              <div class="timeline-company text-cyan">Cloud Infrastructure & CI/CD Systems</div>
+              <p class="timeline-desc">
+                Architected and deployed full-lifecycle automated Jenkins CI/CD pipelines, managed containerized microservices on AWS EC2, configured Prometheus/Grafana monitoring clusters, and provisioned infrastructure using Terraform.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2022 - 2026</div>
+              <h3 class="timeline-role">Bachelor of Technology (B.Tech)</h3>
+              <div class="timeline-company text-emerald">Computer Science / Engineering Focus</div>
+              <p class="timeline-desc">
+                Core coursework in Operating Systems, Distributed Systems, Computer Networks, Database Management Systems, Linux System Administration, and Software Engineering.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE CLI TERMINAL -->
+    <section class="section-wrap" id="terminal">
+      <div class="container max-w-4xl">
+        <div class="section-header text-center">
+          <div class="section-tag mx-auto"><i data-lucide="terminal"></i> Interactive Shell</div>
+          <h2 class="section-title">Engineering Terminal Playground</h2>
+          <p class="section-subtitle">
+            Query systems, review CI/CD pipelines, or inspect deployment environments via command line.
           </p>
-          <p style="color: var(--text-secondary);">
-            I design end-to-end solutions — from user-facing JavaScript interfaces to automated backend tools like my <strong>Automatic Email Sender</strong>, containerized deployments, and continuous integration pipelines.
-          </p>
         </div>
 
-        <div class="tab-content" id="tabPhilosophy">
-          <ul style="list-style: none; display: grid; gap: 1rem; color: var(--text-secondary);">
-            <li><i class="fas fa-check-circle text-gradient" style="margin-right: 0.5rem;"></i> <strong>Automation First:</strong> Eliminating repetitive manual processes through robust scripting and CI/CD tools.</li>
-            <li><i class="fas fa-check-circle text-gradient" style="margin-right: 0.5rem;"></i> <strong>Full-Stack Craftsmanship:</strong> Writing clean HTML/CSS/JS frontend code backed by scalable backend services.</li>
-            <li><i class="fas fa-check-circle text-gradient" style="margin-right: 0.5rem;"></i> <strong>Infrastructure as Code:</strong> Immutable, repeatable server environments with high uptime.</li>
-          </ul>
-        </div>
-
-        <div class="tab-content" id="tabEducation">
-          <div style="color: var(--text-secondary);">
-            <h4 style="color: var(--text-primary); margin-bottom: 0.25rem;">B.Tech. in Computer Science & Engineering</h4>
-            <p style="font-size: 0.9rem; margin-bottom: 1rem; color: var(--accent-primary);">DevOps & Full-Stack Specialization</p>
-            <p>Mastered Linux systems administration, cloud networking, Web APIs, and full-stack software development.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills & Tech Stack Section -->
-  <section class="skills" id="skills">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag"><i class="fas fa-layer-group"></i> Expertise</span>
-        <h2 class="section-title">Skills & Capabilities</h2>
-        <p class="section-subtitle">Combining DevOps automation with modern full-stack web engineering.</p>
-      </div>
-
-      <div class="skills-grid">
-        <!-- DevOps & Automation -->
-        <div class="glass-card skill-category-card">
-          <div class="category-header">
-            <div class="category-icon"><i class="fas fa-terminal"></i></div>
-            <h3 class="category-title">DevOps & Automation</h3>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-info"><span>CI/CD & GitHub Actions</span><span>94%</span></div>
-            <div class="skill-bar"><div class="skill-progress" data-progress="94%"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info"><span>Docker & Containerization</span><span>90%</span></div>
-            <div class="skill-bar"><div class="skill-progress" data-progress="90%"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info"><span>Python & Automation Scripts</span><span>92%</span></div>
-            <div class="skill-bar"><div class="skill-progress" data-progress="92%"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info"><span>Linux Administration & Shell</span><span>88%</span></div>
-            <div class="skill-bar"><div class="skill-progress" data-progress="88%"></div></div>
-          </div>
-        </div>
-
-        <!-- Full-Stack Web Development -->
-        <div class="glass-card skill-category-card">
-          <div class="category-header">
-            <div class="category-icon"><i class="fas fa-code"></i></div>
-            <h3 class="category-title">Full-Stack Web Dev</h3>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-info"><span>HTML5 / CSS3 / Vanilla JS</span><span>95%</span></div>
-            <div class="skill-bar"><div class="skill-progress" data-progress="95%"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info"><span>Node.js & Express APIs</span><span>88%</span></div>
-            <div class="skill-bar"><div class="skill-progress" data-progress="88%"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info"><span>React & Modern Frameworks</span><span>85%</span></div>
-            <div class="skill-bar"><div class="skill-progress" data-progress="85%"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info"><span>Database Architecture</span><span>84%</span></div>
-            <div class="skill-bar"><div class="skill-progress" data-progress="84%"></div></div>
-          </div>
-        </div>
-
-        <!-- Cloud & Monitoring -->
-        <div class="glass-card skill-category-card">
-          <div class="category-header">
-            <div class="category-icon"><i class="fas fa-cloud"></i></div>
-            <h3 class="category-title">Cloud & Infrastructure</h3>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-info"><span>AWS & Cloud Hosting</span><span>86%</span></div>
-            <div class="skill-bar"><div class="skill-progress" data-progress="86%"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info"><span>Kubernetes & Orchestration</span><span>80%</span></div>
-            <div class="skill-bar"><div class="skill-progress" data-progress="80%"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info"><span>Monitoring & Logging</span><span>85%</span></div>
-            <div class="skill-bar"><div class="skill-progress" data-progress="85%"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info"><span>Web Security & SSL</span><span>87%</span></div>
-            <div class="skill-bar"><div class="skill-progress" data-progress="87%"></div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Filterable Portfolio Showcase -->
-  <section class="projects" id="projects">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag"><i class="fas fa-briefcase"></i> Showcase</span>
-        <h2 class="section-title">Featured Projects</h2>
-        <p class="section-subtitle">Highlights of DevOps automation tools and full-stack web applications by Jitender.</p>
-      </div>
-
-      <!-- Category Filter -->
-      <div class="portfolio-filter">
-        <button class="filter-btn active" data-filter="all" id="filterAll">All Projects</button>
-        <button class="filter-btn" data-filter="devops" id="filterDevops">DevOps & Automation</button>
-        <button class="filter-btn" data-filter="web" id="filterWeb">Full-Stack Web</button>
-        <button class="filter-btn" data-filter="mobile" id="filterMobile">Mobile UI</button>
-      </div>
-
-      <!-- Projects Grid -->
-      <div class="projects-grid">
-        <!-- Featured Project: Automatic Email Sender -->
-        <article class="glass-card project-card" data-category="devops" id="cardProjectEmailSender">
-          <div class="project-thumb">
-            <img src="assets/project_email_sender.jpg" alt="Automatic Email Sender Project Preview">
-            <div class="project-overlay">
-              <a href="#" class="overlay-btn view-project-btn" data-project="projectEmailSender" aria-label="View Automatic Email Sender Details" title="Quick Preview">
-                <i class="fas fa-eye"></i>
-              </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" aria-label="GitHub Repository">
-                <i class="fab fa-github"></i>
-              </a>
+        <div class="terminal-window">
+          <div class="term-header">
+            <div class="term-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="term-session">jitender@cloud-node-01: ~</span>
             </div>
-          </div>
-          <div class="project-content">
-            <span class="project-category">DevOps & Automation</span>
-            <h3 class="project-title">Automatic Email Sender</h3>
-            <p class="project-desc">Automated email dispatch engine featuring SMTP connection pooling, bulk queue scheduling, template rendering, and delivery analytics.</p>
-            <div class="project-tags">
-              <span class="tag">Automation</span>
-              <span class="tag">Python / Node</span>
-              <span class="tag">SMTP</span>
-              <span class="tag">CI/CD</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project Card 2: AI Analytics Dashboard -->
-        <article class="glass-card project-card" data-category="devops" id="cardProject1">
-          <div class="project-thumb">
-            <img src="assets/project1.jpg" alt="AI Analytics Dashboard Preview">
-            <div class="project-overlay">
-              <a href="#" class="overlay-btn view-project-btn" data-project="project1" aria-label="View AI Dashboard Details" title="Quick Preview">
-                <i class="fas fa-eye"></i>
-              </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" aria-label="GitHub Repository">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-          <div class="project-content">
-            <span class="project-category">DevOps & AI</span>
-            <h3 class="project-title">Cloud Analytics Dashboard</h3>
-            <p class="project-desc">Real-time infrastructure monitoring and enterprise data visualization dashboard with automated anomaly alerts.</p>
-            <div class="project-tags">
-              <span class="tag">HTML5</span>
-              <span class="tag">CSS3</span>
-              <span class="tag">JavaScript</span>
-              <span class="tag">Docker</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project Card 3: E-Commerce Suite -->
-        <article class="glass-card project-card" data-category="web" id="cardProject2">
-          <div class="project-thumb">
-            <img src="assets/project2.jpg" alt="Luxury E-Commerce Suite Preview">
-            <div class="project-overlay">
-              <a href="#" class="overlay-btn view-project-btn" data-project="project2" aria-label="View E-Commerce Details" title="Quick Preview">
-                <i class="fas fa-eye"></i>
-              </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" aria-label="GitHub Repository">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-          <div class="project-content">
-            <span class="project-category">Full-Stack Web</span>
-            <h3 class="project-title">Luxury E-Commerce Suite</h3>
-            <p class="project-desc">Ultra-responsive storefront with dynamic cart management, instant product filtering, and scalable backend architecture.</p>
-            <div class="project-tags">
-              <span class="tag">Vanilla JS</span>
-              <span class="tag">Glassmorphism</span>
-              <span class="tag">Node.js</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project Card 4: Portfolio Website -->
-      <article class="glass-card project-card" data-category="devops" id="cardProject3">
-        <div class="project-thumb">
-            <img src="images/portfolio-home.png" alt="Portfolio Website Preview">
-           <div class="project-overlay">
-             <a href="#" class="overlay-btn view-project-btn" data-project="project3" aria-label="View Portfolio Website Details" title="Quick Preview">
-              <i class="fas fa-eye"></i>
-             </a>
-             <a href="https://github.com/jitender81/portfolio_website" target="_blank" rel="noopener noreferrer" class="overlay-btn" aria-label="GitHub Repository">
-               <i class="fab fa-github"></i>
-             </a>
-           </div>
-         </div>
-           <div class="project-content">
-              <span class="project-category">DevOps & Full-Stack</span>
-           <h3 class="project-title">Portfolio Website</h3>
-           <p class="project-desc">This portfolio site itself — containerized with Docker, deployed on AWS EC2, served via Nginx reverse proxy with free SSL, and auto-deployed through a Jenkins CI/CD pipeline.</p>
-             <div class="project-tags">
-               <span class="tag">Docker</span>
-               <span class="tag">AWS EC2</span>
-               <span class="tag">Jenkins CI/CD</span>
-               <span class="tag">Nginx</span>
-             </div>
-           </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Work Experience Timeline Section -->
-  <section class="experience" id="experience">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag"><i class="fas fa-history"></i> Career</span>
-        <h2 class="section-title">Experience & Leadership</h2>
-        <p class="section-subtitle">My professional journey in DevOps engineering and full-stack software development.</p>
-      </div>
-
-      <div class="timeline">
-        <!-- Item 1 -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="glass-card timeline-card">
-            <span class="timeline-date"> 2026</span>
-            <h3 class="timeline-role">Senior DevOps & Full-Stack Engineer</h3>
-            <div class="timeline-company">Cloud & Systems Tech</div>
-            <p style="color: var(--text-secondary); font-size: 0.95rem;">
-              Leading CI/CD automation pipelines, cloud deployments, and full-stack web applications. Built automated notification tools and reduced build pipeline times by 45%.
-            </p>
-          </div>
-        </div>
-
-        <!-- Item 2 -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="glass-card timeline-card">
-            <span class="timeline-date">2026</span>
-            <h3 class="timeline-role">Full-Stack Developer & Automation Lead</h3>
-            <div class="timeline-company">Aura Systems</div>
-            <p style="color: var(--text-secondary); font-size: 0.95rem;">
-              Developed custom web applications, automated email/SMS dispatch engines (including Automatic Email Sender), and maintained Docker environments.
-            </p>
-          </div>
-        </div>
-
-        <!-- Item 3 -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="glass-card timeline-card">
-            <span class="timeline-date">2026/span>
-            <h3 class="timeline-role">DevOps & Web Specialist</h3>
-            <div class="timeline-company">Vanguard Tech</div>
-            <p style="color: var(--text-secondary); font-size: 0.95rem;">
-              Managed Linux servers, wrote automated backup scripts, and engineered frontend web interfaces.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact & Footer Section -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag"><i class="fas fa-paper-plane"></i> Connect</span>
-        <h2 class="section-title">Get In Touch With Jitender</h2>
-        <p class="section-subtitle">Interested in DevOps automation, full-stack web projects, or consulting? Send me a message!</p>
-      </div>
-
-      <div class="contact-grid">
-        <!-- Contact Information -->
-        <div class="glass-card contact-info-card">
-          <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Contact Information</h3>
-
-          <div class="contact-item">
-            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-            <div class="contact-details">
-              <label>Email Me</label>
-              <span>jitendermahlawat696@gmail.com</span>
+            <div class="term-actions">
+              <button id="copy-email-cli" class="term-btn"><i data-lucide="copy"></i> Copy Email</button>
+              <button id="reset-terminal" class="term-btn"><i data-lucide="refresh-cw"></i></button>
             </div>
           </div>
 
-          <div class="contact-item">
-            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-            <div class="contact-details">
-              <label>Location</label>
-              <span>Remote / Available Worldwide</span>
+          <div class="terminal-screen" id="terminal-screen">
+            <div class="term-line output-text">
+              <div class="text-cyan font-bold">Jitender Mahlawat :: DevOps & Cloud Engineer CLI v2.4</div>
+              <div class="text-slate-400">Type <span class="text-emerald font-bold">'help'</span> to view available commands or try <span class="text-cyan">'pipeline'</span>, <span class="text-cyan">'projects'</span>, <span class="text-cyan">'contact'</span>.</div>
             </div>
           </div>
 
-          <div class="contact-item">
-            <div class="contact-icon"><i class="fas fa-clock"></i></div>
-            <div class="contact-details">
-              <label>Availability</label>
-              <span>Open for DevOps & Full-Stack Projects</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Interactive Contact Form -->
-        <div class="glass-card contact-form-card">
-          <form id="contactForm">
-            <div class="form-group">
-              <label class="form-label" for="formName">Your Name</label>
-              <input type="text" id="formName" class="form-input" placeholder="e.g. Sarah Jenkins" required>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="formEmail">Email Address</label>
-              <input type="email" id="formEmail" class="form-input" placeholder="sarah@example.com" required>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="formMessage">Message</label>
-              <textarea id="formMessage" class="form-textarea" placeholder="Tell me about your project, automation needs, or inquiry..." required></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary" style="width: 100%;" id="btnSubmitContact">
-              Send Message <i class="fas fa-paper-plane"></i>
-            </button>
+          <form id="terminal-form" class="terminal-input-bar">
+            <span class="text-emerald font-mono">➜</span>
+            <span class="text-slate-400 font-mono">~</span>
+            <input type="text" id="terminal-input" placeholder="type a command (e.g. 'help', 'pipeline', 'stack')..." autocomplete="off" />
+            <i data-lucide="corner-down-left" class="enter-icon"></i>
           </form>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer>
+    <!-- CONTACT SECTION -->
+    <section class="section-wrap bg-darker" id="contact">
+      <div class="container max-w-6xl">
+        <div class="section-header text-center">
+          <div class="section-tag mx-auto"><i data-lucide="mail"></i> Let's Connect</div>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">
+            Interested in DevOps engineering, automated CI/CD pipelines, cloud deployments, or prospective collaborations? Feel free to reach out.
+          </p>
+        </div>
+
+        <div class="contact-grid-clean">
+          <!-- Direct Email Card -->
+          <div class="contact-card-clean">
+            <div class="card-head">
+              <div class="contact-icon text-cyan"><i data-lucide="mail"></i></div>
+              <button id="copy-email-btn" class="btn-copy"><i data-lucide="copy"></i> <span>Copy Email</span></button>
+            </div>
+            <div class="label-tiny">DIRECT EMAIL</div>
+            <a href="mailto:jitendermahlawat696@gmail.com" class="email-link">jitendermahlawat696@gmail.com</a>
+            <div class="contact-card-footer">
+              <a href="mailto:jitendermahlawat696@gmail.com" class="direct-action-link">
+                <span>Compose email in default client</span> <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- LinkedIn Card -->
+          <a href="https://www.linkedin.com/in/jitender-mahlawat-64303b259/" target="_blank" rel="noreferrer" class="contact-card-clean contact-card-link">
+            <div class="card-head">
+              <div class="contact-icon text-cyan"><i data-lucide="linkedin"></i></div>
+              <i data-lucide="arrow-up-right" class="arrow-icon"></i>
+            </div>
+            <div class="label-tiny">PROFESSIONAL NETWORK</div>
+            <div class="font-bold text-white text-lg">LinkedIn Profile</div>
+            <div class="sub-link-text">linkedin.com/in/jitender-mahlawat-64303b259/</div>
+            <div class="contact-card-footer">
+              <span class="direct-action-link">Connect for DevOps & Cloud opportunities ↗</span>
+            </div>
+          </a>
+
+          <!-- GitHub Card -->
+          <a href="https://github.com/jitender81" target="_blank" rel="noreferrer" class="contact-card-clean contact-card-link">
+            <div class="card-head">
+              <div class="contact-icon text-slate"><i data-lucide="github"></i></div>
+              <i data-lucide="arrow-up-right" class="arrow-icon"></i>
+            </div>
+            <div class="label-tiny">CODE REPOSITORIES</div>
+            <div class="font-bold text-white text-lg">GitHub Portfolio & Code</div>
+            <div class="sub-link-text">github.com/jitender81</div>
+            <div class="contact-card-footer">
+              <span class="direct-action-link">Explore Jenkins pipelines, Dockerfiles & repos ↗</span>
+            </div>
+          </a>
+
+          <!-- Live Domain Card -->
+          <a href="https://jitender.ddns.net" target="_blank" rel="noreferrer" class="contact-card-clean contact-card-link">
+            <div class="card-head">
+              <div class="contact-icon text-emerald"><i data-lucide="globe"></i></div>
+              <i data-lucide="arrow-up-right" class="arrow-icon"></i>
+            </div>
+            <div class="label-tiny">PRODUCTION SERVER DOMAIN</div>
+            <div class="font-bold text-emerald text-lg">jitender.ddns.net</div>
+            <div class="sub-link-text">AWS EC2 • Nginx SSL • DDNS</div>
+            <div class="contact-card-footer">
+              <span class="direct-action-link">Visit live hosted server instance ↗</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
     <div class="container">
-      <p>&copy; 2026 Jitender. DevOps Engineer & Full-Stack Developer.</p>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="logo-box"><div class="logo-inner">J</div></div>
+            <span class="brand-name">Jitender Mahlawat</span>
+          </div>
+          <p class="footer-text">
+            DevOps & Cloud Engineer specializing in automated CI/CD pipelines, container orchestration, AWS infrastructure, and real-time observability.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4 class="footer-head">Navigation</h4>
+          <ul>
+            <li><a href="#spotlight">Architecture</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#tech-stack">Tech Stack</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#terminal">Terminal</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-info">
+          <h4 class="footer-head">Engineering Hub</h4>
+          <div class="info-card">
+            <span class="info-label">Status:</span>
+            <span class="info-val text-emerald"><span class="pulse-dot"></span> Available for Roles</span>
+          </div>
+          <div class="info-card">
+            <span class="info-label">Direct Contact:</span>
+            <a href="mailto:jitendermahlawat696@gmail.com" class="text-cyan hover-underline font-bold">jitendermahlawat696@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Jitender Mahlawat. All rights reserved.</div>
+        <div class="footer-meta">
+          <span>AWS EC2 • Nginx SSL • Jenkins CI/CD</span>
+          <button id="scroll-to-top" class="scroll-top-btn" title="Back to top"><i data-lucide="arrow-up"></i></button>
+        </div>
+      </div>
     </div>
   </footer>
 
-  <!-- Project Details Modal -->
-  <div class="modal-backdrop" id="projectModal" aria-hidden="true">
-    <div class="glass-card modal-card">
-      <button class="modal-close" id="modalClose" aria-label="Close Modal">&times;</button>
-      <span class="project-category" id="modalCategory">Category</span>
-      <h3 id="modalTitle" style="font-size: 1.75rem; margin: 0.5rem 0 1rem 0;">Project Title</h3>
-      <div style="border-radius: var(--radius-sm); overflow: hidden; margin-bottom: 1.5rem;">
-        <img src="" alt="Project Detail Image" id="modalImage">
-      </div>
-      <p id="modalDesc" style="color: var(--text-secondary); margin-bottom: 1.5rem; line-height: 1.6;"></p>
-      <div class="project-tags" id="modalTags" style="margin-bottom: 1.5rem;"></div>
-      <div style="display: flex; gap: 1rem;">
-        <a href="#" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Live Demo <i class="fas fa-external-link-alt"></i></a>
-        <a href="#" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Source Code <i class="fab fa-github"></i></a>
-      </div>
-    </div>
-  </div>
-
-  <!-- JavaScript -->
+  <!-- Script JS -->
   <script src="script.js"></script>
 </body>
 </html>
